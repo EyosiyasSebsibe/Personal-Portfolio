@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyosiyas S.Demese</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <style>
         .nav-link {
             display: inline-block;
@@ -58,13 +59,24 @@
                     &#9776;
                 </button>
                 <nav class="hidden md:block space-x-6 text-xl" aria-label="main">
-                    <a href="#" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">Website List</a>
-                    <a href="#" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">About Me</a>
-                    <a href="#" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">Contact Me</a>
+                    <a href="#websites" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">Website List</a>
+                    <a href="#about" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">About Me</a>
+                    <a href="#contact" class="nav-link hover:text-gray-300 px-3 py-2 font-bold">Contact Me</a>
                 </nav>
             </div>
         </section>
-    </header>
+
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"><button class="text-8xl self-end px-6">
+            &times;
+        </button>
+    <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+        <a href="#" class="w-full text-center py-6 hover:opacity-90">Home</a>
+        <a href="#" class="w-full text-center py-6 hover:opacity-90">Websitelist</a>
+        <a href="#" class="w-full text-center py-6 hover:opacity-90">About Me</a>
+        <a href="#" class="w-full text-center py-6 hover:opacity-90">Contact Me</a>
+    </nav>
+    </section>
+</header>
     
     <main class="max-w-4xl ml-3">
         <section class="flex flex-col sm:flex-row px-6 mr-auto items-center gap-8 mb-12 bg-gray-300 rounded-lg p-6">
@@ -89,16 +101,16 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center">
+    <section id="websites" class="flex flex-col items-center justify-center">
         <!-- First Image -->
-        <div class="md:w-full md:pr-4 mb-6 md:mb-0">
+        <div class="md:min-w-full md:pr-4 mb-6 md:mb-0">
             <div class="flex flex-col">
                 <div class="relative rounded-l-full overflow-hidden border border-gray-300 hover:border-gray-500">
                     <img src="./img/home-example (2).png" alt="Little Taco Shop HTML Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-300">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-100">
             
                         <p class="text-white text-sm text-center p-4 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et suscipit sapien.
+                           <a href="https://github.com/EyosiyasSebsibe/LittleTacoShophtml.git">View in github</a>
                         </p>
                     </div>
                 </div>
@@ -118,7 +130,7 @@
                 <div class="relative rounded-r-full overflow-hidden border border-gray-300 hover:border-gray-500">
                     <img src="./img/68747470733a2f2f692e696d6775722e636f6d2f724754455259632e706e67.png" alt="Little Taco Shop CSS Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-300">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-100">
-                        <p class="text-white text-sm text-center p-4 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et suscipit sapien.</p>
+                        <p class="text-white text-sm text-center p-4 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"> <a href="https://github.com/EyosiyasSebsibe/LittleTacoShopCSS.git">View in github</a></p>
                     </div>
                 </div>
             </div>
@@ -133,13 +145,12 @@
         </div>
         <br class="my-6">
     
-        <!-- Third Image -->
         <div class="md:w-full  md:pl-4 mt-6 md:mt-0">
             <div class="flex flex-col">
                 <div class="relative rounded-r-full overflow-hidden border border-gray-300 hover:border-gray-500">
                     <img src="./img/68747470733a2f2f63646e332e662d63646e2e636f6d2f2f66696c65732f646f776e6c6f61642f3230303832363237352f6461726b253230726f636b65742e706e673f77696474683d373830266865696768743d333832266669743.webp" alt="AcmeRockets Tailwind Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-300">
                     <div class="absolute inset-0 flex items-center justify-center bg-gray-500 lack bg-opacity-50 opacity-100">
-                        <p class="text-white text-sm text-center p-4 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,.</p>
+                        <p class="text-white text-sm text-center p-4 bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"><a href="https://github.com/EyosiyasSebsibe/TailwindAcmeRocket.git">View in github</a></p>
                     </div>
                 </div>
             </div>
@@ -156,7 +167,7 @@
     </section>
 
 
-    <section class="py-12">
+    <section id="about" class="py-12">
         <div class="max-w-xl mx-auto bg-gray-600 shadow-lg rounded-lg overflow-hidden my-8">
             <div class="px-6 py-4">
                 <h2 class="text-2xl font-bold mb-2">Heading</h2>
@@ -209,7 +220,7 @@
         </div>
     </section>
     
-    <section class="bg-gray-500 py-12">
+    <section id="contact" class="bg-gray-500 py-12">
         <div class="max-w-3xl mx-auto bg-gray-600 shadow-lg rounded-lg overflow-hidden">
             <div class="px-6 py-8">
                 <h2 class="text-3xl font-bold text-center text-white mb-6">Contact Me</h2>
